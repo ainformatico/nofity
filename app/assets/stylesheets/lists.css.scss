@@ -1,0 +1,14 @@
+.list-wiped {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-separator {
+  li {
+    border-left: 1px solid #ddd;
+    &:first-child {
+      border-left: none;
+    }
+  }
+}

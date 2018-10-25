@@ -1,0 +1,30 @@
+%form(role="form")
+  .form-group
+    {>"note/shared/details"/}
+    {<content}
+    {link.title}
+    {/content}
+    {<extra}
+    %h4
+      %a(href="{link.url}" class="link")
+        {link.url|urlTrim}
+    {/extra}
+    %label(for="note-description")
+      = I18n.t('note.edit.note_description')
+    %textarea(class="form-control" id="note-description" name="content" placeholder="#{I18n.t('note.edit.enter_content')}" autofocus="true")
+      {content}
+    {?categories}
+    %ul
+      {#categories}
+      %li
+        {name}
+      {/categories}
+    {/categories}
+    .actions.row.top-spacer
+      .col-md-6
+        %input.btn.btn-primary{type: 'submit', value: t('form.save')}
+        %button.btn.btn-default.js-cancel
+          = t('form.cancel')
+      .col-md-1.col-md-offset-5
+        %button.btn.btn-danger.js-delete
+          = t('form.delete')

@@ -1,0 +1,6 @@
+- content_for :title do
+  = I18n.t('public_notes.title')
+
+#showcase
+  = render partial: 'note/note', collection: @notes
+  = render 'shared/detail_quick_signup'

@@ -1,0 +1,5 @@
+WAIT=8
+TIMEOUT=5
+ATTEMPTS=3
+
+/_alive.txt alive

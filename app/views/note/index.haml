@@ -1,0 +1,8 @@
+.list
+  - @notes.each do |note|
+    %dt
+      = note.content
+    %dd
+      - note.categories.each do |category|
+        %span
+          = category.name

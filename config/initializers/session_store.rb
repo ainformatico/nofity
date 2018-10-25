@@ -1,3 +1,7 @@
 # Be sure to restart your server when you modify this file.
-
-Nfy::Application.config.session_store :cookie_store, key: '_nfy_session'
+Rails.application.config.session_store :redis_store,
+                                       redis_server: {
+                                         db: 0,
+                                         url: ENV.fetch('REDIS_URL'),
+                                         namespace: 'nofity:sessions'
+                                       }

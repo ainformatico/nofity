@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title
+      = "#{t('errors.forbidden.title')} - #{APP.app_name}"
+    %meta(charset="UTF-8")/
+    %meta(content="IE=edge" http-equiv="X-UA-Compatible")/
+    %meta(content="width=device-width, initial-scale=1.0" name="viewport")/
+    = stylesheet_link_tag stylesheet_path('application.css')
+    /[if lt IE 9]
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  %body#not-found.not-found-page
+    .info
+      %h1
+        = t('errors.forbidden.title')
+      %p
+        = t('errors.forbidden.description')
+      %p.go-back
+        = link_to t('errors.forbidden.go_back'), '/'

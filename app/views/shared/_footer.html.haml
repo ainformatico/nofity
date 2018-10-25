@@ -1,0 +1,8 @@
+- cache(cache_name('footer')) do
+  .container.credits
+    .text-center.col-md-12
+      %p
+        #{t('layout.footer.copyright')} © #{Time.now.year} #{APP.app_name} - #{t('layout.footer.all_rights_reserved')} - #{link_to(t('terms_of_use'), tos_path)} - #{link_to(t('privacy_policy'), privacy_policy_path)}
+      - if user_signed_in?
+        %p
+          #{APP.git_hash}

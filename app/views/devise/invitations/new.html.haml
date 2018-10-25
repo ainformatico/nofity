@@ -1,0 +1,13 @@
+%h2
+  = t('devise.invitations.new.header')
+
+= form_for resource, as: resource_name, url: invitation_path(resource_name), class: :form, html: {:method => :post} do |f|
+  = devise_error_messages!
+
+  - resource.class.invite_key_fields.each do |field|
+    .form-group
+      = f.label field, t('login.field.email')
+      = f.text_field field, class: 'form-control', autofocus: true, required: true
+
+  .form-group.submit
+    = f.submit t('devise.invitations.new.submit_button'), class: 'btn btn-default'

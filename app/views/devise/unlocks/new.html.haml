@@ -1,0 +1,13 @@
+%h2 #{t('login.unlocks.resend_instructions')}
+
+= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }, class: :form) do |f|
+  = devise_error_messages!
+
+  .form-group
+    = f.label :email, t('login.fields.email')
+    = f.email_field :email, autofocus: true, class: 'form-control', required: true
+
+  .form-group.submit
+    = f.submit t('login.unlocks.resend_instructions_button'), class: 'btn btn-default'
+
+= render 'devise/shared/links'

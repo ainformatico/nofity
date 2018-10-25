@@ -1,0 +1,19 @@
+%h2 #{t('login.password.change_your_password')}
+
+= form_for(resource, as: resource_name, url: password_path(resource_name), class: :form, html: { method: :put }) do |f|
+  = devise_error_messages!
+
+  = f.hidden_field :reset_password_token
+
+  .form-group
+    = f.label :password, t('login.passwords.new_password')
+    = f.password_field :password, autofocus: true, class: 'form-control', required: true
+
+  .form-group
+    = f.label :password_confirmation, t('login.password.confirm_password')
+    = f.password_field :password_confirmation, class: 'form-control', required: true
+
+  .form-group.submit
+    = f.submit t('login.passwords.change_my_password'), class: 'btn btn-default'
+
+= render 'devise/shared/links'

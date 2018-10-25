@@ -1,0 +1,17 @@
+- cache(note) do
+  .container
+    .project
+      .note
+        - if note
+          - if note.link
+            %h2
+              = link_to note.link.title, note.link.url
+            %p
+              = note.link.description
+          %h2
+            = note.content
+        - else
+          %h2
+            = t('public.not_found_title')
+          %p
+            = t('public.not_found_content')

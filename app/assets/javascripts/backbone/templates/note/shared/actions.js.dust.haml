@@ -1,0 +1,14 @@
+.row.actions
+  .col-md-6
+    {?public}
+    %button.btn.btn-default.js-view
+      = t('actions.buttons.view')
+    {/public}
+    %button.btn.btn-default.js-edit
+      = t('actions.buttons.edit')
+    %button.btn.btn-danger.js-delete
+      = t('actions.buttons.delete')
+  .related.col-md-2.col-md-offset-4
+    %label
+      #{t('note.details.public')}{~s}
+      <input type='checkbox' class="js-visibility" {?public}checked{/public} />

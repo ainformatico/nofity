@@ -1,0 +1,11 @@
+%p
+  #{t('greetings', name: @resource.email)}!
+
+%p
+  = t('devise.mailer.unlock_instructions.body_description')
+
+%p
+  = t('devise.mailer.unlock_instructions.body_instructions')
+
+%p
+  = link_to t('deivse.mailer.unlock_instructions.link'), unlock_url(@resource, unlock_token: @token)

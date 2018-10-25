@@ -1,0 +1,25 @@
+%ul.list-wiped.text-center.bottom-list
+  - if controller_name != 'sessions' and !current_user
+    %li
+      = link_to t('login.sign_in'), new_session_path(resource_name)
+
+  - if devise_mapping.registerable? && controller_name != 'registrations'
+    %li
+      = link_to t('login.sign_up'), new_registration_path(resource_name)
+
+  - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'
+    %li
+      = link_to t('login.forgotten_password'), new_password_path(resource_name)
+
+  - if devise_mapping.confirmable? && controller_name != 'confirmations'
+    %li
+      = link_to t('login.confirmations.no_notification_received'), new_confirmation_path(resource_name)
+
+  - if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks'
+    %li
+      = link_to t('login.confirmations.no_unlock_received'), new_unlock_path(resource_name)
+
+  - if devise_mapping.omniauthable?
+    - resource_class.omniauth_providers.each do |provider|
+      %li
+        = link_to "#{t('login.providers.sign_in')} #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider)

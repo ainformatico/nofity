@@ -1,0 +1,15 @@
+%header.navbar.navbar-inverse{role: :banner, class: (:hero unless defined?hero)}
+  - cache(cache_name('home_header')) do
+    .container
+      .navbar-header
+        %button.navbar-toggle(type="button" data-toggle="collapse" data-target=".bs-navbar-collapse")
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        = link_to APP.app_name, root_path, class: 'navbar-brand'
+      %nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            = link_to t('note.public'), public_notes_path
+          %li
+            = link_to t('actions.login.login'), user_session_path

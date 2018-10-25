@@ -1,0 +1,9 @@
+- cache(cache_name('quick_signup')) do
+  #about-us
+    #cta
+      .col-md-12
+        .wrapper.clearfix.project
+          %h4
+            = t('cfa.join_us')
+          %p
+            = link_to t('cfa.request_invitation'), invitation_request_path, class: 'button button-small'

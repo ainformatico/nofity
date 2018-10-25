@@ -1,0 +1,16 @@
+{?link}
+%h2.note-title
+  {+content}
+  %a(href='{link.url}' class="link")
+    {link.title}
+  {/content}
+{+extra/}
+{?link.description}
+%p
+  {link.description}
+{/link.description}
+{/link}
+{?content}
+%h2.note-description
+  {content}
+{/content}

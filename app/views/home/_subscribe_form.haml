@@ -1,0 +1,5 @@
+= form_for @invitation_request, html: {class: 'form-inline',role: :form} do |f|
+  .form-group
+    = f.email_field :email, class: 'form-control', autofocus: true, placeholder: t('home.form.email_address_placeholder')
+    = f.label :email, t('home.form.email_address'), class: 'sr-only'
+  = f.submit t('home.form.stay_in_touch'), class: 'button button-small'

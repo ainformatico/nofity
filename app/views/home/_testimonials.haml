@@ -1,0 +1,33 @@
+- cache(cache_name('home_testimonials')) do
+  #home
+    #testimonials
+      .container
+        .row.header
+          .col-md-12
+            %h3
+              = t('home.testimonials.title')
+        .row
+          .col-sm-6
+            .testimonial.pull-right
+              .quote
+                The best way to save and organize all my links and if you care about your privacy then
+                #{APP.app_name} is your best option!
+                .arrow-down
+                  .arrow
+                  .arrow-border
+              .author
+                %img.pic{:alt => "testimonial1", :src => "images/testimonials/ainformatico.jpg"}/
+                .name Alejandro El Informático
+                .company Xing AG
+          .col-sm-6
+            .testimonial
+              .quote
+                Thanks to #{APP.app_name} now I can share my links across all my team. It's just an <em>Alpha</em>
+                but is so good.
+                .arrow-down
+                  .arrow
+                  .arrow-border
+              .author
+                %img.pic{:alt => "testimonial2", :src => "images/testimonials/portalp.jpg"}/
+                .name Pau Gallardo
+                .company Computer Sciences Brand S.L

@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title
+      = "#{t('invitation_request.title')} - #{APP.app_name}"
+    - cache(cache_name('invitation_includes')) do
+      = stylesheet_link_tag 'application', media: 'all'
+    = csrf_meta_tags
+    = render 'shared/metas'
+  %body#signup
+    .container
+      .row.header
+        %h1.logo
+          = link_to APP.app_name, root_path
+      .row
+        #main-region.wrapper.clearfix
+          = render 'layouts/messages'
+          .formy
+            = yield
+        %footer.already-account
+          = render 'shared/footer'
+    = render 'shared/analytics'

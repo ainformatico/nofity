@@ -21,3 +21,181 @@
 
 en:
   hello: "Hello world"
+  welcome: "Welcome %{name}"
+  greetings: "Hello %{name}"
+  actions:
+    buttons:
+      delete: Delete
+      edit: Edit
+      view: View
+      copy: Copy to my notes
+    links:
+      back: Back
+    login:
+      login: Login
+  confirmations:
+    are_you_sure: Are you sure?
+  form:
+    create: Create
+    save: Save
+    cancel: Cancel
+    update: Update
+    send: Send
+  note:
+    edit:
+      note_description: Description
+      enter_content: Enter note content
+    link:
+      not_found: '404 - not found'
+    empty:
+      title: No data found
+    all: My notes
+    public: Public notes
+    details:
+      public: Public
+  header:
+    profile: Profile
+    edit_profile: Edit profile
+    sign_out: Sign out
+    new_invitation: Invite a friend
+    support: Support
+  layout:
+    footer:
+      copyright: Copyright
+      all_rights_reserved: All rights reserved
+  home:
+    title:
+      slogan: when notes meets social
+    metas:
+      description: Nofity is a new way to create and share links with your friends. Create categories, Spaces, public links... and much more! Save your links instantly within the browser or directly on your smartphone or tablet.
+      keywords: nofity, links, social, share, spaces, friends, share links, android, ios
+    info:
+      title: Organize all your links with Nofity
+      description: Save, categorize and share all the information you find on the Internet
+    testimonials:
+      title: What people say about us
+    hero:
+      title: The best way to save your links
+      subscribe: Subscribe to our newsletter
+    form:
+      email_address: Email address
+      email_address_placeholder: Email address
+      stay_in_touch: Stay in touch
+    newsletter:
+      title: Available soon...
+      description_html: "For now Nofity is a private <em>Alpha</em>, but we have planned to release a public version very soon. Sign up for the newsletter to be in touch."
+    features:
+      privacy:
+        title: Privacy
+        description: we do not execute complicated analytics on your data to provide you targeted ads or links.
+      permissions:
+        title: Permission control
+        description: assign permissions, edit them later and keep your links under control. You have total control over your links' visibility.
+      fast:
+        title: Save as fast as you surf
+        description: save your favorite links or read them later whitin the page you are on or directly from our application.
+      collaboration:
+        title: Collaboration
+        description: are you and your team working on the same project? create a Space and share links on the same board.
+      search:
+        title: Search
+        description: search easily to find the links you are looking for.
+      keyboard:
+        title: Keyboard
+        description: keyboard-friendly interface, every time you hit 'enter' a link is created, then navigate easily with the keyboard shortcuts.
+  login:
+    title: Login
+    metas:
+      description: Login into Nofity and start creating and sharing notes with your friends. Create categories, lists, Spaces, public notes... and much more!
+      keywords: login, request, invitation, alpha, nofity, notes, social, share, spaces, friends, share notes, notificacions, android, ios name='keywords' />
+    sign_in: Sign In
+    sign_up: Sign Up
+    forgotten_password: Forgot your password?
+    fields:
+      email: Email
+      password: Password
+      current_password: Current Password
+      password_confirmation: Password Confirmation
+      remember_me: Remember me
+    unlocks:
+      resend_instructions: Resend unlock instructions
+      resend_instructions_button: Resend unlock instructions
+    confirmations:
+      no_notification_received: Didn't receive confirmation instructions?
+      no_unlock_received: Didn't receive unlock instructions?
+      resend_confirmation: Resend confirmation instructions
+      resend_confirmation_instructions: Resend confirmation instructions
+    passwords:
+      new_password: New password
+      confirm_password: Confirm new password
+      send_reset_password: Send me reset password instructions
+      change_your_password: Change your password
+      change_my_password: Change my password
+    providers:
+      sign_in: Sign in with
+    registrations:
+      edit: Edit
+      leave_to_maintain_hint: leave blank if you don't want to change it
+      enter_current_password_hint: we need your current password to confirm your changes
+    account:
+      unhappy: Unhappy?
+      cancel_my_account: Cancel my account
+  support:
+    title: Support
+    form:
+      content: Content
+      content_placeholder: Enter your text here
+    created_title:
+      Your message has been sent.
+    created_description_html: "Thanks for sending the message. We will process it
+      and contact you back using the following email address: <strong>%{email}</strong>"
+  invitation_request:
+    title: Invitation request
+    created_title: Thanks for getting in touch!
+    created_description_html: "Thanks for requesting an invitation to use Nofity. We will process the request
+      and contact you using the following email address: <strong>%{email}</strong>"
+    return_to_home: Return to the home page
+  errors:
+    forbidden:
+      title: Forbidden
+      description: You cannot access this page.
+      go_back: Go back to our home page.
+    not_found:
+      title: Not found
+      description: The page you're looking for doesn't exist.
+      go_back: Go back to our home page.
+    server:
+      title: Server error
+      description: An error occurred, please try reloading the page.
+      go_back: Or go back to our home page.
+    maintenance:
+      title: Maintenance
+      description_1: We are under maintenance.
+      description_2: We are releasing some great features for you! Please be patient.
+      description_3: Sorry for the inconveniences.
+      go_back: If the error persists try go back to our home page.
+  terms_of_use: Terms of use
+  privacy_policy: Privacy policy
+  public:
+    not_found_title: Not found
+    not_found_content: The note you are looking for does not exists.
+  public_notes:
+    title: Public notes
+  cfa:
+    request_invitation: Request an invitation
+    join_us: Join us and start sharing and saving your notes and links today
+
+  onboardings:
+    initial:
+      step1:
+        title: 'Create a note or save a link'
+        content: 'You can create a simple note or save a link. Click this button and see how a link is saved'
+      step2:
+        title: 'See all your content'
+        content: 'Here you will find all your saved content'
+      step3:
+        title: 'See public notes from all users'
+        content: 'All public notes from all users are listed here'
+      step4:
+        title: 'Edit your account'
+        content: 'Edit you details or invite friends to use nofity today!'

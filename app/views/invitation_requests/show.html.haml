@@ -1,0 +1,3 @@
+%h2 #{t('invitation_request.created_title')}
+%p= t('invitation_request.created_description_html', email: @invitation_request.email)
+%p= link_to t('invitation_request.return_to_home'), root_path

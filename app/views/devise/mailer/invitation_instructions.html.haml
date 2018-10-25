@@ -1,0 +1,14 @@
+%p
+  = t('greetings', name: @resource.email)
+
+%p
+  = t('devise.mailer.invitation_instructions.someone_invited_you', url: root_url)
+
+%p
+  = link_to t('devise.mailer.invitation_instructions.accept'), accept_invitation_url(@resource, invitation_token: @token)
+
+%p
+  = t('devise.mailer.invitation_instructions.ignore')
+
+%p
+  = t('devise.mailer.invitation_instructions.explanation')

@@ -1,0 +1,17 @@
+.git*
+db/*.sqlite3
+db/*.sqlite3-journal
+log/*
+tmp/*
+Dockerfile
+nodes/
+site-cookbooks
+terraform*
+Berksfile*
+custom_plan.rb
+docker-compose.yml
+Vagrantfile
+zeus.json
+Procfile
+infra
+data_bag

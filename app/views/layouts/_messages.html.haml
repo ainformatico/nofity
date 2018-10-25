@@ -1,0 +1,5 @@
+- flash.each do |key, message|
+  %div(class="alert alert-#{map_message_classname(key)}")
+    %ul.list-wiped
+      %li
+        = message

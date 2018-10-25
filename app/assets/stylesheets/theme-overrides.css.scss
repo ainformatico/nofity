@@ -1,0 +1,48 @@
+.navbar {
+  border-radius: 0;
+}
+
+#footer {
+  padding: 20px 0;
+}
+
+.note-container {
+  .actions {
+    padding: 0.5em;
+  }
+  .related {
+    text-align: right;
+  }
+}
+
+.top-spacer {
+  margin-top: 1em;
+}
+
+.formy {
+  .bottom-list {
+    margin-top: 2em;
+  }
+}
+
+.actions {
+  .btn + .btn {
+    margin-left: 0.5em;
+  }
+}
+
+.bottom-spacer {
+  margin-bottom: 2em;
+}
+
+#home4 #hero {
+  background-image: url("../../images/bg.jpg");
+}
+
+#portfolio #footer-white {
+  background: transparent;
+}
+
+#portfolio #showcase .project h3 {
+  text-align: left;
+}

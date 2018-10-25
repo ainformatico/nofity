@@ -1,0 +1,9 @@
+- if @invitation_request.errors.any?
+  = render 'layouts/messages', flash: { alert: "#{t('home.form.email_address')} #{@invitation_request.errors.messages[:email].first}" }
+
+= form_for @invitation_request, html: {class: :form, role: :form} do |f|
+  .form-group
+    = f.email_field :email, class: 'form-control', autofocus: true, placeholder: t('home.form.email_address_placeholder'), value: @invitation_request.email, required: true
+    = f.label :email, t('home.form.email_address'), class: 'sr-only'
+  .form-group.submit
+    = f.submit t('home.form.stay_in_touch'), class: 'btn btn-default'

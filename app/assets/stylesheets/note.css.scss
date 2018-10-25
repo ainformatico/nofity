@@ -1,0 +1,70 @@
+.note {
+  .page-header, h2 {
+    margin-top: 0;
+  }
+}
+
+.note-container {
+  margin-bottom: 15px;
+  background: #FFF;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #dfe3e6;
+  cursor: default;
+  h2 {
+    margin: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #31363a;
+    font-weight: 500;
+    font-size: 16px;
+    & + p {
+      border-bottom: 1px solid #f1f1f1;
+    }
+  }
+  &.inner {
+    h2 {
+      padding: 10px 0;
+    }
+  }
+  small {
+    display: block;
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  p {
+    margin: 0;
+    font-size: 14px;
+    padding: 15px;
+    color: #a1a1a1;
+    &.social-icons {
+      margin: 0;
+      padding: 5px 15px;
+      border-top: 1px solid #f1f1f1;
+      a {
+        display: inline-block;
+        margin-right: 5px;
+        width: 32px;
+        padding: 6px 0;
+        text-align: center;
+        font-size: 14px;
+        background: #697e93;
+        color: #FFF;
+        border-radius: 2px;
+        &:hover {
+          background: #3d4754;
+        }
+      }
+    }
+  }
+  .w-footer {
+    display: block;
+    padding: 10px 15px;
+    color: #a1a1a1;
+    border-top: 1px solid #f1f1f1;
+    small {
+      font-size: 12px;
+    }
+  }
+}
